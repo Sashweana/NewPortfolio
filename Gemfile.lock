@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/Sashweana/snickersnee_view_tool
-  revision: 6084b62ba936ee7a9a7d93b54871e34dacc7369c
-  specs:
-    snickersnee_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -159,6 +153,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    snickersnee_view_tool (0.1.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -209,7 +204,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.6)
   sass-rails (~> 5.0)
-  snickersnee_view_tool!
+  snickersnee_view_tool (~> 0.1.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
