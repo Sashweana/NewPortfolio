@@ -17,4 +17,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    SnickersneeViewTool::Renderer.copyright 'Sashweana Rajendran', 'All rights reserved'
+  end
 end
