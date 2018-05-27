@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.page(params[:page]).per(5)
-    @page_title = "Sashweana | My Blog"
+    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
@@ -60,7 +60,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
       format.json { head :no_content }
     end
   end
@@ -71,7 +71,8 @@ class BlogsController < ApplicationController
     elsif @blog.published?
       @blog.draft!
     end
-    redirect_to blogs_url, notice: 'Post status has been updated'
+        
+    redirect_to blogs_url, notice: 'Post status has been updated.'
   end
 
   private
