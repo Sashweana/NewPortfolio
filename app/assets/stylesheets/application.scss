@@ -165,3 +165,20 @@ body {
  .tech-news a {
   color: #1be8da;
  }
+
+ .app-card-container {
+  color: black;
+  text-align: left;
+ }
+
+ .app-card-container > .card {
+  padding: 40px;
+ }
+
+ .profile-img {
+  border-radius: 10px;
+ }
+
+ .app-card-container a {
+  color: blue;
+ }
