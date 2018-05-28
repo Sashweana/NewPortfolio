@@ -4,6 +4,24 @@
     <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
   </div>
 
+    <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <% if logged_in?(:site_admin) %>
+    <div class="p-3">
+      <h4 class="font-italic">Admin Panel</h4>
+      <ol class="list-unstyled">
+        <li><%= link_to 'Write a new Blog', new_blog_path %></li>
+        <li><%= link_to "Topics", topics_path %></li>
+    </div>
+  <% end %>
+
+  <div class="p-3">
+    <h4 class="font-italic">Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p class="mb-0"><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="p-3">
     <h4 class="font-italic">Elsewhere</h4>
     <ol class="list-unstyled social-links">

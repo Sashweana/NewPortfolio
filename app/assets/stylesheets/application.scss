@@ -27,8 +27,12 @@ a:hover {
  * Base structure
  */
 
+
+// font-family: 'Cookie', cursive;
+
 html,
 body {
+  font-family: 'Lora', serif;
   height: 100%;
 }
 
@@ -38,6 +42,15 @@ body {
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Crimson Text', serif;
 }
 
 .cover-container {
@@ -54,6 +67,8 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  font-size: 2.2rem;
+  font-family: 'Cookie', cursive;
 }
 
 .nav-masthead .nav-link {
@@ -164,4 +179,31 @@ body {
 
  .tech-news a {
   color: #1be8da;
+ }
+
+ .app-card-container {
+  color: black;
+  text-align: left;
+ }
+
+ .app-card-container > .card {
+  padding: 40px;
+ }
+
+ .profile-img {
+  border-radius: 10px;
+ }
+
+ .app-card-container a {
+  color: blue;
+ }
+
+ .card-body {
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
  }
